@@ -71,4 +71,8 @@ message AgentAttributes {
     // This also allows the server to clear out old entries automatically
     // since they can be easily recreated.
     bool can_reattest = 3;
+
+    // Optional. Should the agent reattest when its SVID expires?
+    // If false, agent will not reattest, ie TOFU.
+    bool reattest = 4;
 }
